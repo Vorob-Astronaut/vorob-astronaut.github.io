@@ -1,0 +1,257 @@
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (max-width: 600px) { @content; }
+  }
+  @elseif $point == medium {
+    @media (max-width: 900px) { @content; }
+  }
+  @elseif $point == large {
+    @media (max-width: 1200px) { @content; }
+  }
+}
+
+.mainWrapper {
+  padding: 0 15%;
+
+  @include breakpoint(small) {
+    padding: 0 30px;
+  }
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  padding: 1% 0;
+}
+
+.brandName {
+  flex: 1;
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.supportText {
+  font-size: 0.8em;
+  cursor: pointer;
+  padding: 5px;
+
+  @include breakpoint(small) {
+    display: none;
+  }
+}
+
+.dowloadButton {
+  font-size: 0.8em;
+  border: solid 1px white;
+  border-radius: 3em;
+  padding: 9px 16px;
+  margin-left: 45px;
+  cursor: pointer;
+  white-space: nowrap;
+
+  @include breakpoint(small) {
+    // display: none;
+    border: none;
+    padding: 0;
+  }
+}
+
+.mainView {
+  display: flex;
+  margin-top: 10%;
+  @include breakpoint(small) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.appStoreIcon {
+  cursor: pointer;
+}
+
+.phoneImage {
+  @include breakpoint(small) {
+    margin-top: 40px;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 108.5%;
+  background: linear-gradient(90deg, #FFFFFF 0%, #582DD1 104.26%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  @include breakpoint(small) {
+    font-size: 40px;
+  }
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  color: #B1B1B1;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.numbers {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.numbers__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  color: #B1B1B1;
+  white-space: nowrap;
+}
+
+.numbersWrapper {
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbersBorder {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 0;
+  border-right: 0;
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint(small) {
+    display: none;
+  }
+}
+
+.dowloadWrapper {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 0;
+  border-right: 0;
+  padding: 40px 0px;
+}
+
+.mainViewText {
+  padding-right: 15%;
+
+  @include breakpoint(small) {
+    padding-right: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.dowloadText {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+
+  @include breakpoint(small) {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.receiptImageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appStoreIconWrapper {
+  flex: 1;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSubtext {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #B1B1B1;
+  margin: 10px 0;
+
+  @include breakpoint(small) {
+    font-size: 20px;
+  }
+}
+
+.footerTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+
+  @include breakpoint(small) {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+}
+
+.footerWrapper {
+  display: flex;
+  margin-bottom: 60px;
+
+  @include breakpoint(small) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    // align-items: center;
+  }
+}
+
+.receiptTitle {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+
+  @include breakpoint(small) {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.copyrightText {
+  // padding-top: 10%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #B1B1B1;
+
+  @include breakpoint(small) {
+    margin-top: 30px;
+  }
+}
+
+.legalText {
+  margin-right: 5%;
+}
+
+.firstColumnWrapper {
+  flex: 1;
+}
+

@@ -1,5 +1,8 @@
 import Image from "next/image";
+import Link from 'next/link';
 import styles from "./page.module.scss";
+
+const APP_URL = 'https://apps.apple.com/us/app/stats-for-spotify-receiptify/id1622577500';
 
 export default function Home() {
   return (
@@ -8,7 +11,7 @@ export default function Home() {
         <Image src="logo.svg" height={50} width={50} alt="logo"></Image>
         <h1 className={styles.brandName}>Receiptify</h1>
         <div className={styles.supportText}>Support</div>
-        <div className={styles.dowloadButton}>Download</div>
+        <Link className={styles.dowloadButton} target="_blank" href={APP_URL}>Download</Link>
       </header>
       <div>
         <div className={styles.mainView}>
@@ -18,7 +21,9 @@ export default function Home() {
               Discover a whole new world of music by gaining special insights
               into your unique taste in tunes.
             </div>
-            <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.5} height={97 / 1.5} alt="app store"></Image>
+            <Link target="_blank" href={APP_URL}>
+              <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.5} height={97 / 1.5} alt="app store"></Image>
+            </Link>
           </div>
           <Image className={styles.phoneImage} src="/iphone-home-screen.png" width={319 / 1.3} height={601 / 1.3} alt="iphone"></Image>
         </div>
@@ -47,7 +52,9 @@ export default function Home() {
         <div className={styles.dowloadWrapper}>
           <div className={styles.dowloadText}>Install App and start your journey</div>
           <div className={styles.appStoreIconWrapper}>
-            <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.5} height={97 / 1.5} alt="app store"></Image>
+            <Link target="_blank" href={APP_URL}>
+              <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.5} height={97 / 1.5} alt="app store"></Image>
+            </Link>
           </div>
         </div>
       </div>

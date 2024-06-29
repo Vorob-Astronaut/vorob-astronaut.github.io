@@ -13,7 +13,7 @@ export default function Home() {
       <header className={styles.headerWrapper}>
         <Image src="logo.svg" height={50} width={50} alt="logo"></Image>
         <h1 className={styles.brandName}>Receiptify</h1>
-        <div className={styles.supportText}>Support</div>
+        <div className={styles.supportText}><a href="mailto:wulong@receiptifyapp.com">Support</a></div>
         <Link onClick={() => sendGTMEvent({ event: 'app-store-clicked'})} className={styles.dowloadButton} target="_blank" href={APP_URL}>Download</Link>
       </header>
       <div>
@@ -67,12 +67,11 @@ export default function Home() {
         </div>
         <div className={styles.legalText}>
           <p className={styles.footerTitle}>Legal</p>
-          <p className={styles.footerSubtext}>Privacy Policy</p>
+          <p className={styles.footerSubtext}><a href="https://drive.google.com/file/d/1XDIpgEO0iB7MLD9IXcxPWSKA230bmy9_/view">Privacy Policy</a></p>
         </div>
         <div>
-          <p className={styles.footerTitle}>Support</p>
-          <p className={styles.footerSubtext}>Contact</p>
-          <p className={styles.footerSubtext}>Support</p>
+          <p className={styles.footerTitle}>Contact</p>
+          <p className={styles.footerSubtext}><a href="mailto:wulong@receiptifyapp.com">wulong@receiptifyapp.com</a></p>
         </div>
       </footer>
     </div>

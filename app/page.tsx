@@ -28,7 +28,7 @@ export default function Home() {
               <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.5} height={97 / 1.5} alt="app store"></Image>
             </Link>
           </div>
-          <Image className={styles.phoneImage} src="/iphone-home-screen.png" width={319 / 1.3} height={601 / 1.3} alt="iphone"></Image>
+          <Image priority className={styles.phoneImage} src="/iphone-home-screen.png" width={319 / 1.3} height={601 / 1.3} alt="iphone"></Image>
         </div>
         <div className={styles.numbersBorder}>
           <div className={styles.numbersWrapper}>

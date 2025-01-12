@@ -14,7 +14,7 @@ export default function Home() {
         <Image src="logo.svg" height={50} width={50} alt="logo"></Image>
         <h1 className={styles.brandName}>Receiptify</h1>
         <div className={styles.supportText}><a href="mailto:wulong@receiptifyapp.com">Support</a></div>
-        <Link onClick={() => sendGTMEvent({ event: 'app-store-clicked'})} className={styles.dowloadButton} target="_blank" href={APP_URL}>Download</Link>
+        <Link onClick={() => sendGTMEvent({ event: 'app-store-clicked', event_name: 'app-store-clicked'})} className={styles.dowloadButton} target="_blank" href={APP_URL}>Download</Link>
       </header>
       <div>
         <div className={styles.mainView}>
@@ -24,7 +24,7 @@ export default function Home() {
               Discover a whole new world of music by gaining special insights
               into your unique taste in tunes.
             </div>
-            <Link onClick={() => sendGTMEvent({ event: 'app-store-clicked'})} target="_blank" href={APP_URL}>
+            <Link onClick={() => sendGTMEvent({ event: 'app-store-clicked', event_name: 'app-store-clicked'})} target="_blank" href={APP_URL}>
               <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.5} height={97 / 1.5} alt="app store"></Image>
             </Link>
           </div>
@@ -55,7 +55,7 @@ export default function Home() {
         <div className={styles.dowloadWrapper}>
           <div className={styles.dowloadText}>Install App and start your journey</div>
           <div className={styles.appStoreIconWrapper}>
-            <Link onClick={() => sendGTMEvent({ event: 'app-store-clicked'})} target="_blank" href={APP_URL}>
+            <Link onClick={() => sendGTMEvent({ event: 'app-store-clicked', event_name: 'app-store-clicked'})} target="_blank" href={APP_URL}>
               <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.5} height={97 / 1.5} alt="app store"></Image>
             </Link>
           </div>

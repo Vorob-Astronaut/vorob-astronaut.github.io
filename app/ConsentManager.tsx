@@ -19,7 +19,7 @@ export function ConsentManager() {
       }
       if (window.dataLayer && window.gtag) {
         // Set default consent state
-        window.gtag('consent', 'default', {
+        window.gtag('consent', 'update', {
           'ad_storage': 'granted',
           'ad_user_data': 'granted',
           'ad_personalization': 'granted',

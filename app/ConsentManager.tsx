@@ -13,7 +13,7 @@ export function ConsentManager() {
   useEffect(() => {
     // Function to check if GTM is loaded
     const checkGTMLoaded = () => {
-      const consentAlreadySet = localStorage.getItem('gtm_consent_set');
+      const consentAlreadySet = sessionStorage.getItem('gtm_consent_set');
       if (consentAlreadySet) {
         return true;
       }
@@ -25,7 +25,7 @@ export function ConsentManager() {
           'ad_personalization': 'granted',
           'analytics_storage': 'granted'
         });
-        localStorage.setItem('gtm_consent_set', 'true');
+        sessionStorage.setItem('gtm_consent_set', 'true');
         return true;
       }
       return false;

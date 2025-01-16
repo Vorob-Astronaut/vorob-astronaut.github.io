@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from 'next/link';
 import styles from "./page.module.scss";
-import { sendGTMEvent } from '@next/third-parties/google';
 
 const APP_URL = 'https://apps.apple.com/us/app/stats-for-spotify-receiptify/id1622577500';
 

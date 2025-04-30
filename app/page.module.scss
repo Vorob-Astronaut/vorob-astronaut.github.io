@@ -255,3 +255,13 @@
   flex: 1;
 }
 
+.appStoreIconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  @include breakpoint(small) {
+    flex-direction: column;
+  }
+}

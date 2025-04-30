@@ -5,7 +5,7 @@ import Link from 'next/link';
 import styles from "./page.module.scss";
 
 const APP_URL = 'https://apps.apple.com/us/app/stats-for-spotify-receiptify/id1622577500';
-
+const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.receiptify&hl=en';
 export default function Home() {
   return (
     <div className={styles.mainWrapper}>
@@ -31,17 +31,30 @@ export default function Home() {
               Discover a whole new world of music by gaining special insights
               into your unique taste in tunes.
             </div>
-            <Link onClick={() => {
-              // Make sure GTM is loaded and consent is granted before sending the event
-              if (window.gtag) {
-                window.gtag('event', 'app_store_clicked', {
-                  event_category: 'engagement',
-                  event_label: 'app store button'
-                });
-              }
-            }} target="_blank" href={APP_URL}>
-              <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.5} height={97 / 1.5} alt="app store"></Image>
-            </Link>
+            <div className={styles.appStoreIconWrapper}>
+              <Link onClick={() => {
+                // Make sure GTM is loaded and consent is granted before sending the event
+                if (window.gtag) {
+                  window.gtag('event', 'app_store_clicked', {
+                    event_category: 'engagement',
+                    event_label: 'app store button'
+                  });
+                }
+              }} target="_blank" href={APP_URL}>
+                <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.35} height={97 / 1.35} alt="app store"></Image>
+              </Link>
+              <Link onClick={() => {
+                // Make sure GTM is loaded and consent is granted before sending the event
+                if (window.gtag) {
+                  window.gtag('event', 'google_play_clicked', {
+                    event_category: 'engagement',
+                    event_label: 'google play button'
+                  });
+                }
+              }} target="_blank" href={GOOGLE_PLAY_URL}>
+                <Image className={styles.appStoreIcon} src="/google-play.svg" width={329 / 1.5} height={97 / 1.5} alt="google play"></Image>
+              </Link>
+            </div>
           </div>
           <Image priority className={styles.phoneImage} src="/iphone-home-screen.png" width={319 / 1.3} height={601 / 1.3} alt="iphone"></Image>
         </div>
@@ -79,7 +92,18 @@ export default function Home() {
                 });
               }
             }} target="_blank" href={APP_URL}>
-              <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.5} height={97 / 1.5} alt="app store"></Image>
+              <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.35} height={97 / 1.35} alt="app store"></Image>
+            </Link>
+            <Link onClick={() => {
+              // Make sure GTM is loaded and consent is granted before sending the event
+              if (window.gtag) {
+                window.gtag('event', 'google_play_clicked', {
+                  event_category: 'engagement',
+                  event_label: 'google play button'
+                });
+              }
+            }} target="_blank" href={GOOGLE_PLAY_URL}>
+              <Image className={styles.appStoreIcon} src="/google-play.svg" width={329 / 1.5} height={97 / 1.5} alt="google play"></Image>
             </Link>
           </div>
         </div>

@@ -13,15 +13,6 @@ export default function Home() {
         <Image src="logo.svg" height={50} width={50} alt="logo"></Image>
         <h1 className={styles.brandName}>Receiptify</h1>
         <div className={styles.supportText}><a href="mailto:wulong@receiptifyapp.com">Support</a></div>
-        <Link onClick={() => {
-          // Make sure GTM is loaded and consent is granted before sending the event
-          if (window.gtag) {
-            window.gtag('event', 'app_store_clicked', {
-              event_category: 'engagement',
-              event_label: 'app store button'
-            });
-          }
-        }} className={styles.dowloadButton} target="_blank" href={APP_URL}>Download</Link>
       </header>
       <div>
         <div className={styles.mainView}>

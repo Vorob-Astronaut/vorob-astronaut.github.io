@@ -7,6 +7,14 @@ import styles from "./page.module.scss";
 const APP_URL = 'https://apps.apple.com/us/app/stats-for-spotify-receiptify/id1622577500';
 const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.receiptify&hl=en';
 export default function Home() {
+  const handleAppStoreClick = () => {
+    window.open('https://apps.apple.com/app/receptify/id6474282023', '_blank');
+  };
+
+  const handleGooglePlayClick = () => {
+    window.open('https://play.google.com/store/apps/details?id=com.receptify.app', '_blank');
+  };
+
   return (
     <div className={styles.mainWrapper}>
       <header className={styles.headerWrapper}>
@@ -23,26 +31,10 @@ export default function Home() {
               into your unique taste in tunes.
             </div>
             <div className={styles.appStoreIconWrapper}>
-              <Link onClick={() => {
-                // Make sure GTM is loaded and consent is granted before sending the event
-                if (window.gtag) {
-                  window.gtag('event', 'app_store_clicked', {
-                    event_category: 'engagement',
-                    event_label: 'app store button'
-                  });
-                }
-              }} target="_blank" href={APP_URL}>
+              <Link onClick={handleAppStoreClick} target="_blank" href={APP_URL}>
                 <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.35} height={97 / 1.35} alt="app store"></Image>
               </Link>
-              <Link onClick={() => {
-                // Make sure GTM is loaded and consent is granted before sending the event
-                if (window.gtag) {
-                  window.gtag('event', 'google_play_clicked', {
-                    event_category: 'engagement',
-                    event_label: 'google play button'
-                  });
-                }
-              }} target="_blank" href={GOOGLE_PLAY_URL}>
+              <Link onClick={handleGooglePlayClick} target="_blank" href={GOOGLE_PLAY_URL}>
                 <Image className={styles.appStoreIcon} src="/google-play.svg" width={329 / 1.5} height={97 / 1.5} alt="google play"></Image>
               </Link>
             </div>
@@ -74,26 +66,10 @@ export default function Home() {
         <div className={styles.dowloadWrapper}>
           <div className={styles.dowloadText}>Install App and start your journey</div>
           <div className={styles.appStoreIconWrapper}>
-            <Link onClick={() => {
-              // Make sure GTM is loaded and consent is granted before sending the event
-              if (window.gtag) {
-                window.gtag('event', 'app_store_clicked', {
-                  event_category: 'engagement',
-                  event_label: 'app store button'
-                });
-              }
-            }} target="_blank" href={APP_URL}>
+            <Link onClick={handleAppStoreClick} target="_blank" href={APP_URL}>
               <Image className={styles.appStoreIcon} src="/app-store.svg" width={329 / 1.35} height={97 / 1.35} alt="app store"></Image>
             </Link>
-            <Link onClick={() => {
-              // Make sure GTM is loaded and consent is granted before sending the event
-              if (window.gtag) {
-                window.gtag('event', 'google_play_clicked', {
-                  event_category: 'engagement',
-                  event_label: 'google play button'
-                });
-              }
-            }} target="_blank" href={GOOGLE_PLAY_URL}>
+            <Link onClick={handleGooglePlayClick} target="_blank" href={GOOGLE_PLAY_URL}>
               <Image className={styles.appStoreIcon} src="/google-play.svg" width={329 / 1.5} height={97 / 1.5} alt="google play"></Image>
             </Link>
           </div>

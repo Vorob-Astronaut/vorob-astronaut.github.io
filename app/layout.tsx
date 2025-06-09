@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
-import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
-import localFont from 'next/font/local'
+import { Inter } from 'next/font/google'
 import './globals.css'
-import { ConsentManager } from './ConsentManager';
 
-const font = localFont({ src: './fonts/ClashDisplay-Variable.ttf' });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Receiptify',
+  title: 'Receptify',
+  description: 'Receptify - Your Personal Recipe Manager',
 }
 
 export default function RootLayout({
@@ -17,10 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
-      <GoogleAnalytics gaId="G-DKCY13KS2C"/>
-      <GoogleTagManager gtmId="AW-16646712155" />
-      <ConsentManager />
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   )
 }

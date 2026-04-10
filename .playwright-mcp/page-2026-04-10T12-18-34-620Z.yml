@@ -1,0 +1,169 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Wulong LLC" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "Products" [ref=e7] [cursor=pointer]:
+            - /url: /#products
+        - listitem [ref=e8]:
+          - link "Contact" [ref=e9] [cursor=pointer]:
+            - /url: /#contact
+        - listitem [ref=e10]:
+          - link "Customer Support 24/7" [ref=e11] [cursor=pointer]:
+            - /url: /help
+            - img [ref=e12]
+            - text: Customer Support 24/7
+  - main [ref=e15]:
+    - generic [ref=e21]:
+      - generic [ref=e22]: Digital Products
+      - heading "Products built for real people" [level=1] [ref=e24]:
+        - text: Products built
+        - text: for
+        - emphasis [ref=e25]: real people
+      - paragraph [ref=e26]: At Wulong LLC, we create digital products that help people improve their health, career, and lifestyle with simple daily routines.
+      - generic [ref=e27]:
+        - link "Explore Products" [ref=e28] [cursor=pointer]:
+          - /url: "#products"
+          - text: Explore Products
+          - img [ref=e29]
+        - link "Get in Touch" [ref=e31] [cursor=pointer]:
+          - /url: mailto:contact@wulongllc.com
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - img [ref=e37]
+        - generic [ref=e39]:
+          - generic [ref=e40]: Secure Payments
+          - generic [ref=e41]: Powered by Stripe
+      - generic [ref=e43]:
+        - img [ref=e45]
+        - generic [ref=e48]:
+          - generic [ref=e49]: 24/7 Support
+          - generic [ref=e50]: Real humans, fast replies
+      - generic [ref=e52]:
+        - img [ref=e54]
+        - generic [ref=e58]:
+          - generic [ref=e59]: Cancel Anytime
+          - generic [ref=e60]: No lock-in contracts
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]: Our Products
+        - heading "Transparent Pricing" [level=2] [ref=e65]
+        - paragraph [ref=e66]: Full recurring rates for every plan. No hidden fees, no surprises on your statement.
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - img [ref=e71]
+            - heading "Tinnitus Relief Program" [level=3] [ref=e75]
+            - link "tinnitusrelief.io ↗" [ref=e76] [cursor=pointer]:
+              - /url: https://tinnitusrelief.io
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e80]: Monthly
+                - generic [ref=e81]: 1-Month Plan
+              - generic [ref=e82]:
+                - generic [ref=e83]: $49.99
+                - generic [ref=e84]: /month
+            - generic [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e87]: Quarterly
+                - generic [ref=e88]: 3-Month Plan
+              - generic [ref=e89]:
+                - generic [ref=e90]: $99.00
+                - generic [ref=e91]: /3 mo
+          - generic [ref=e92]:
+            - img [ref=e93]
+            - generic [ref=e95]: Auto-renews until cancelled. Prices are full rates after any intro offer.
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - img [ref=e99]
+            - heading "Remote Jobs Board" [level=3] [ref=e102]
+            - link "remotejobsboard.io ↗" [ref=e103] [cursor=pointer]:
+              - /url: https://remotejobsboard.io
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]: Weekly
+                - generic [ref=e108]: 1-Week Plan
+              - generic [ref=e109]:
+                - generic [ref=e110]: $14.99
+                - generic [ref=e111]: /week
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - generic [ref=e114]: Monthly
+                - generic [ref=e115]: 1-Month Plan
+              - generic [ref=e116]:
+                - generic [ref=e117]: $39.99
+                - generic [ref=e118]: /month
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - generic [ref=e121]: Quarterly
+                - generic [ref=e122]: 3-Month Plan
+              - generic [ref=e123]:
+                - generic [ref=e124]: $89.99
+                - generic [ref=e125]: /3 mo
+          - generic [ref=e126]:
+            - img [ref=e127]
+            - generic [ref=e129]: Auto-renews until cancelled. Prices are full rates after any intro offer.
+    - generic [ref=e134]:
+      - generic [ref=e135]:
+        - generic [ref=e136]: Customer Support
+        - heading "We're here whenever you need us" [level=2] [ref=e137]:
+          - text: We're here
+          - text: whenever you
+          - text: need us
+        - paragraph [ref=e138]: Questions about billing, your subscription, or anything else? Our team responds to every email personally.
+      - generic [ref=e139]:
+        - generic [ref=e140]: 24/7 Email Support
+        - link "contact@wulongllc.com" [ref=e142] [cursor=pointer]:
+          - /url: mailto:contact@wulongllc.com
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - img [ref=e145]
+            - text: Subscription & billing questions
+          - generic [ref=e147]:
+            - img [ref=e148]
+            - text: Cancel or modify your plan
+          - generic [ref=e150]:
+            - img [ref=e151]
+            - text: Refund requests
+          - generic [ref=e153]:
+            - img [ref=e154]
+            - text: General inquiries
+        - link "Send Us an Email" [ref=e156] [cursor=pointer]:
+          - /url: mailto:contact@wulongllc.com
+          - text: Send Us an Email
+          - img [ref=e157]
+  - contentinfo [ref=e159]:
+    - generic [ref=e161]:
+      - paragraph [ref=e162]: Wulong LLC
+      - list [ref=e163]:
+        - listitem [ref=e164]:
+          - link "contact@wulongllc.com" [ref=e165] [cursor=pointer]:
+            - /url: mailto:contact@wulongllc.com
+        - listitem [ref=e166]:
+          - link "Customer Support" [ref=e167] [cursor=pointer]:
+            - /url: /help
+        - listitem [ref=e168]:
+          - link "Cancellation" [ref=e169] [cursor=pointer]:
+            - /url: /help#cancel
+        - listitem [ref=e170]:
+          - link "Refunds" [ref=e171] [cursor=pointer]:
+            - /url: /help#refund
+      - paragraph [ref=e172]: © 2026 Wulong LLC. All rights reserved.
+      - paragraph [ref=e173]: Payments processed securely by Stripe
+  - generic [ref=e176]:
+    - button "Menu" [ref=e177]:
+      - img [ref=e179]
+      - generic: Menu
+    - button "Inspect" [ref=e183]:
+      - img [ref=e185]
+      - generic: Inspect
+    - button "Audit" [ref=e187]:
+      - img [ref=e189]
+      - generic: Audit
+    - button "Settings" [ref=e192]:
+      - img [ref=e194]
+      - generic: Settings

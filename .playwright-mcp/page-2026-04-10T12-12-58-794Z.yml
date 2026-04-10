@@ -1,0 +1,157 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Wulong LLC" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "Products" [ref=e7] [cursor=pointer]:
+            - /url: /#products
+        - listitem [ref=e8]:
+          - link "Contact" [ref=e9] [cursor=pointer]:
+            - /url: /#contact
+        - listitem [ref=e10]:
+          - link "Help Center" [ref=e11] [cursor=pointer]:
+            - /url: /help
+  - main [ref=e12]:
+    - generic [ref=e15]:
+      - generic [ref=e16]: Support
+      - heading "Help Center" [level=1] [ref=e17]
+      - paragraph [ref=e18]: Find answers to common questions about your subscription, billing, and account.
+      - paragraph [ref=e19]:
+        - text: Can't find what you need?
+        - link "contact@wulongllc.com" [ref=e20] [cursor=pointer]:
+          - /url: mailto:contact@wulongllc.com
+    - generic [ref=e23]:
+      - link "Cancel Subscription" [ref=e24] [cursor=pointer]:
+        - /url: "#cancel"
+        - img [ref=e26]
+        - generic [ref=e30]: Cancel Subscription
+      - link "Auto-Renewal" [ref=e31] [cursor=pointer]:
+        - /url: "#auto-renew"
+        - img [ref=e33]
+        - generic [ref=e38]: Auto-Renewal
+      - link "Refunds" [ref=e39] [cursor=pointer]:
+        - /url: "#refund"
+        - img [ref=e41]
+        - generic [ref=e43]: Refunds
+      - link "Email Support" [ref=e44] [cursor=pointer]:
+        - /url: mailto:contact@wulongllc.com
+        - img [ref=e46]
+        - generic [ref=e49]: Email Support
+    - generic [ref=e54]:
+      - generic [ref=e55]: Billing
+      - heading "Don't Recognize a Charge?" [level=2] [ref=e56]
+      - paragraph [ref=e57]:
+        - text: Charges from our products appear on your bank or credit card statement as
+        - strong [ref=e58]: WULONG LLC
+        - text: or
+        - strong [ref=e59]: STRIPE* WULONG
+        - text: .
+      - paragraph [ref=e60]: "We operate the following subscription services:"
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - strong [ref=e63]: Tinnitus Relief Program
+          - generic [ref=e64]: tinnitusrelief.io
+        - generic [ref=e65]:
+          - strong [ref=e66]: Remote Jobs Board
+          - generic [ref=e67]: remotejobsboard.io
+      - paragraph [ref=e68]: If you or someone with access to your payment method signed up for one of these services, that explains the charge.
+      - paragraph [ref=e69]:
+        - text: If you believe the charge is unauthorized, email us at
+        - link "contact@wulongllc.com" [ref=e70] [cursor=pointer]:
+          - /url: mailto:contact@wulongllc.com
+        - text: — we'll investigate and resolve it within 24 hours.
+      - generic [ref=e71]:
+        - img [ref=e72]
+        - generic [ref=e74]: Please reach out to us before contacting your bank — we can resolve issues much faster.
+    - generic [ref=e76]:
+      - generic [ref=e77]: FAQ
+      - heading "Frequently Asked Questions" [level=2] [ref=e78]
+      - generic [ref=e79]:
+        - group [ref=e80]:
+          - generic "How do I cancel my subscription?" [ref=e81] [cursor=pointer]:
+            - generic [ref=e82]: How do I cancel my subscription?
+          - generic [ref=e84]:
+            - paragraph [ref=e85]: If you are receiving charges from Wulong LLC, you most likely subscribed directly through one of our product websites and have a web subscription.
+            - paragraph [ref=e86]: "Here are the main characteristics of a Wulong LLC web subscription:"
+            - list [ref=e87]:
+              - listitem [ref=e88]: You paid with a credit/debit card
+              - listitem [ref=e89]: You subscribed through our product website (tinnitusrelief.io or remotejobsboard.io)
+              - listitem [ref=e90]: The descriptor on your bank statement says "Wulong LLC", "Stripe* Wulong", or a variation
+              - listitem [ref=e91]: You received a receipt or welcome email from us (not from Apple or Google)
+            - heading "How to Cancel" [level=4] [ref=e92]
+            - paragraph [ref=e93]:
+              - strong [ref=e94]: "Option 1: Via product website"
+            - list [ref=e95]:
+              - listitem [ref=e96]: Log in to your account on the product website (tinnitusrelief.io or remotejobsboard.io)
+              - listitem [ref=e97]: Go to Account Settings
+              - listitem [ref=e98]: Find Subscription Details and tap "Cancel Subscription"
+            - paragraph [ref=e99]:
+              - strong [ref=e100]: "Option 2: Via email"
+            - paragraph [ref=e101]:
+              - text: Send an email to
+              - link "contact@wulongllc.com" [ref=e102] [cursor=pointer]:
+                - /url: mailto:contact@wulongllc.com
+              - text: "with the subject line \"Cancel Subscription\" and include:"
+            - list [ref=e103]:
+              - listitem [ref=e104]: Your full name
+              - listitem [ref=e105]: Last 4 digits of your card
+              - listitem [ref=e106]: Card brand (Visa, Mastercard, etc.)
+              - listitem [ref=e107]: Date of any transaction
+            - paragraph [ref=e108]: We will process your cancellation within 24 hours.
+            - paragraph [ref=e109]: Once you cancel, your subscription will remain active until the end of the paid period, but you won't be charged again.
+        - group [ref=e110]:
+          - generic "Does my subscription automatically renew?" [ref=e111] [cursor=pointer]:
+            - generic [ref=e112]: Does my subscription automatically renew?
+        - group [ref=e114]:
+          - generic "I didn't authorize a subscription or recurring charge" [ref=e115] [cursor=pointer]:
+            - generic [ref=e116]: I didn't authorize a subscription or recurring charge
+        - group [ref=e118]:
+          - generic "I was unaware of the charges" [ref=e119] [cursor=pointer]:
+            - generic [ref=e120]: I was unaware of the charges
+        - group [ref=e122]:
+          - generic "How do I get a refund?" [ref=e123] [cursor=pointer]:
+            - generic [ref=e124]: How do I get a refund?
+        - group [ref=e126]:
+          - generic "What payment methods do you accept?" [ref=e127] [cursor=pointer]:
+            - generic [ref=e128]: What payment methods do you accept?
+    - generic [ref=e133]:
+      - img [ref=e135]
+      - heading "Need More Help?" [level=3] [ref=e138]
+      - paragraph [ref=e139]: We're here for any billing or account question you may have.
+      - link "Email Us at contact@wulongllc.com" [ref=e140] [cursor=pointer]:
+        - /url: mailto:contact@wulongllc.com
+  - contentinfo [ref=e141]:
+    - generic [ref=e143]:
+      - paragraph [ref=e144]: Wulong LLC
+      - list [ref=e145]:
+        - listitem [ref=e146]:
+          - link "contact@wulongllc.com" [ref=e147] [cursor=pointer]:
+            - /url: mailto:contact@wulongllc.com
+        - listitem [ref=e148]:
+          - link "Help Center" [ref=e149] [cursor=pointer]:
+            - /url: /help
+        - listitem [ref=e150]:
+          - link "Cancellation" [ref=e151] [cursor=pointer]:
+            - /url: /help#cancel
+        - listitem [ref=e152]:
+          - link "Refunds" [ref=e153] [cursor=pointer]:
+            - /url: /help#refund
+      - paragraph [ref=e154]: © 2026 Wulong LLC. All rights reserved.
+      - paragraph [ref=e155]: Payments processed securely by Stripe
+  - generic [ref=e158]:
+    - button "Menu" [ref=e159]:
+      - img [ref=e161]
+      - generic: Menu
+    - button "Inspect" [ref=e165]:
+      - img [ref=e167]
+      - generic: Inspect
+    - button "Audit" [ref=e169]:
+      - generic [ref=e170]:
+        - img [ref=e171]
+        - img [ref=e174]
+      - generic: Audit
+    - button "Settings" [ref=e177]:
+      - img [ref=e179]
+      - generic: Settings

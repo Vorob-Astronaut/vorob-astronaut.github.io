@@ -1,0 +1,65 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wulong Apps LLC — Help Center & Billing Support. Questions about a charge? Contact us at contact@wulongllc.com." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="sticky top-0 z-50 bg-bg/85 backdrop-blur-xl border-b border-line-subtle">
+      <div class="max-w-6xl mx-auto px-4 md:px-8 py-3 md:py-5 flex items-center justify-between">
+        <a href="/" class="flex items-center text-ink no-underline hover:no-underline shrink-0">
+          <svg class="w-6 h-6 md:w-7 md:h-7" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M23.78 5.004h-.228a2.187 2.187 0 00-2.18 2.196v4.912c0 .98-.804 1.775-1.76 1.775a1.818 1.818 0 01-1.472-.773L13.168 5.95a2.197 2.197 0 00-1.81-.95c-1.134 0-2.154.972-2.154 2.173v4.94c0 .98-.797 1.775-1.76 1.775-.57 0-1.136-.289-1.472-.773L.408 5.098C.282 4.918 0 5.007 0 5.228v4.284c0 .216.066.426.188.604l5.475 7.889c.324.466.8.812 1.351.938 1.377.316 2.645-.754 2.645-2.117V11.89c0-.98.787-1.775 1.76-1.775h.002c.586 0 1.135.288 1.472.773l4.972 7.163a2.15 2.15 0 001.81.95c1.158 0 2.151-.973 2.151-2.173v-4.939c0-.98.787-1.775 1.76-1.775h.194c.122 0 .22-.1.22-.222V5.225a.221.221 0 00-.22-.222z"/></svg>
+        </a>
+        <div class="flex items-center gap-3 md:gap-9">
+          <a href="/#products" class="hidden md:block text-ink-soft text-[0.85rem] font-medium uppercase tracking-wider hover:text-amber no-underline transition-colors">Products</a>
+          <a href="/#contact" class="hidden md:block text-ink-soft text-[0.85rem] font-medium uppercase tracking-wider hover:text-amber no-underline transition-colors">Contact</a>
+          <a href="/help" class="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-full bg-amber text-white text-[0.75rem] md:text-[0.82rem] font-semibold no-underline hover:bg-amber-hover hover:-translate-y-0.5 transition-all shadow-[0_2px_12px_rgba(180,83,9,0.25)]">
+            <svg class="w-3.5 h-3.5 md:w-4 md:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            <span class="hidden sm:inline">Customer Support</span>
+            <span class="sm:hidden">Support</span>
+            24/7
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative bg-dark text-white/50 py-12 md:py-16 text-sm">
+      <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-amber/30 to-transparent"></div>
+      <div class="max-w-6xl mx-auto px-6 md:px-8 flex flex-col items-center gap-5 md:gap-6 text-center">
+        <div class="flex items-center gap-2.5">
+          <svg class="w-5 h-5 text-white/80" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M23.78 5.004h-.228a2.187 2.187 0 00-2.18 2.196v4.912c0 .98-.804 1.775-1.76 1.775a1.818 1.818 0 01-1.472-.773L13.168 5.95a2.197 2.197 0 00-1.81-.95c-1.134 0-2.154.972-2.154 2.173v4.94c0 .98-.797 1.775-1.76 1.775-.57 0-1.136-.289-1.472-.773L.408 5.098C.282 4.918 0 5.007 0 5.228v4.284c0 .216.066.426.188.604l5.475 7.889c.324.466.8.812 1.351.938 1.377.316 2.645-.754 2.645-2.117V11.89c0-.98.787-1.775 1.76-1.775h.002c.586 0 1.135.288 1.472.773l4.972 7.163a2.15 2.15 0 001.81.95c1.158 0 2.151-.973 2.151-2.173v-4.939c0-.98.787-1.775 1.76-1.775h.194c.122 0 .22-.1.22-.222V5.225a.221.221 0 00-.22-.222z"/></svg>
+          <p class="font-display text-lg text-white/80">Wulong Apps LLC</p>
+        </div>
+        <ul class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-6 md:gap-8 list-none">
+          <li><a href="mailto:contact@wulongllc.com" class="text-amber text-sm no-underline hover:text-amber-hover transition-colors">contact@wulongllc.com</a></li>
+          <li><a href="/help" class="text-white/50 text-xs font-medium uppercase tracking-wider no-underline hover:text-white/90 transition-colors">Customer Support</a></li>
+          <li><a href="/help#cancel" class="text-white/50 text-xs font-medium uppercase tracking-wider no-underline hover:text-white/90 transition-colors">Cancellation</a></li>
+          <li><a href="/help#refund" class="text-white/50 text-xs font-medium uppercase tracking-wider no-underline hover:text-white/90 transition-colors">Refunds</a></li>
+        </ul>
+        <p class="text-xs">&copy; 2026 Wulong Apps LLC. All rights reserved.</p>
+        <p class="text-xs opacity-40">Payments processed securely by Stripe</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

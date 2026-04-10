@@ -1,0 +1,156 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Wulong LLC" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "Products" [ref=e7] [cursor=pointer]:
+            - /url: /#products
+        - listitem [ref=e8]:
+          - link "Contact" [ref=e9] [cursor=pointer]:
+            - /url: /#contact
+        - listitem [ref=e10]:
+          - link "Help Center" [ref=e11] [cursor=pointer]:
+            - /url: /help
+  - main [ref=e12]:
+    - generic [ref=e15]:
+      - generic [ref=e16]: Subscription Services
+      - heading "Products built for real people" [level=1] [ref=e17]:
+        - text: Products built
+        - text: for
+        - emphasis [ref=e18]: real people
+      - paragraph [ref=e19]: Wulong LLC creates subscription services designed to improve your everyday life. Clear pricing. Honest billing. Human support.
+      - generic [ref=e20]:
+        - link "Explore Products" [ref=e21] [cursor=pointer]:
+          - /url: "#products"
+          - text: Explore Products
+          - img [ref=e22]
+        - link "Get in Touch" [ref=e24] [cursor=pointer]:
+          - /url: mailto:contact@wulongllc.com
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - img [ref=e30]
+        - generic [ref=e32]: Secure Payments Powered by Stripe
+      - generic [ref=e33]:
+        - img [ref=e35]
+        - generic [ref=e38]: 24/7 Support Real humans, fast replies
+      - generic [ref=e39]:
+        - img [ref=e41]
+        - generic [ref=e45]: Cancel Anytime No lock-in contracts
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: Our Products
+        - heading "Transparent Pricing" [level=2] [ref=e50]
+        - paragraph [ref=e51]: Full recurring rates for every plan. No hidden fees, no surprises on your statement.
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - img [ref=e56]
+            - heading "Tinnitus Relief Program" [level=3] [ref=e60]
+            - link "tinnitusrelief.io ↗" [ref=e61] [cursor=pointer]:
+              - /url: https://tinnitusrelief.io
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - generic [ref=e64]: Weekly 1-Week Plan
+              - generic [ref=e65]:
+                - generic [ref=e66]: $49.99
+                - text: /week
+            - generic [ref=e67]:
+              - generic [ref=e68]: Monthly 1-Month Plan
+              - generic [ref=e69]:
+                - generic [ref=e70]: $49.99
+                - text: /month
+            - generic [ref=e71]:
+              - generic [ref=e72]: Quarterly 3-Month Plan
+              - generic [ref=e73]:
+                - generic [ref=e74]: $99.00
+                - text: /3 mo
+          - generic [ref=e75]:
+            - img [ref=e76]
+            - text: Auto-renews until cancelled. Prices are full rates after any intro offer.
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - img [ref=e81]
+            - heading "Remote Jobs Board" [level=3] [ref=e84]
+            - link "remotejobsboard.io ↗" [ref=e85] [cursor=pointer]:
+              - /url: https://remotejobsboard.io
+          - generic [ref=e86]:
+            - generic [ref=e87]:
+              - generic [ref=e88]: Weekly 1-Week Plan
+              - generic [ref=e89]:
+                - generic [ref=e90]: $14.99
+                - text: /week
+            - generic [ref=e91]:
+              - generic [ref=e92]: Monthly 1-Month Plan
+              - generic [ref=e93]:
+                - generic [ref=e94]: $39.99
+                - text: /month
+            - generic [ref=e95]:
+              - generic [ref=e96]: Quarterly 3-Month Plan
+              - generic [ref=e97]:
+                - generic [ref=e98]: $89.99
+                - text: /3 mo
+          - generic [ref=e99]:
+            - img [ref=e100]
+            - text: Auto-renews until cancelled. Prices are full rates after any intro offer.
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]: Customer Support
+        - heading "We're here whenever you need us" [level=2] [ref=e108]:
+          - text: We're here
+          - text: whenever you
+          - text: need us
+        - paragraph [ref=e109]: Questions about billing, your subscription, or anything else? Our team responds to every email personally.
+      - generic [ref=e111]:
+        - generic [ref=e112]: 24/7 Email Support
+        - link "contact@wulongllc.com" [ref=e113] [cursor=pointer]:
+          - /url: mailto:contact@wulongllc.com
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - img [ref=e116]
+            - text: Subscription & billing questions
+          - generic [ref=e118]:
+            - img [ref=e119]
+            - text: Cancel or modify your plan
+          - generic [ref=e121]:
+            - img [ref=e122]
+            - text: Refund requests
+          - generic [ref=e124]:
+            - img [ref=e125]
+            - text: General inquiries
+        - link "Send Us an Email" [ref=e127] [cursor=pointer]:
+          - /url: mailto:contact@wulongllc.com
+          - text: Send Us an Email
+          - img [ref=e128]
+  - contentinfo [ref=e130]:
+    - generic [ref=e131]:
+      - paragraph [ref=e132]: Wulong LLC
+      - list [ref=e133]:
+        - listitem [ref=e134]:
+          - link "contact@wulongllc.com" [ref=e135] [cursor=pointer]:
+            - /url: mailto:contact@wulongllc.com
+        - listitem [ref=e136]:
+          - link "Help Center" [ref=e137] [cursor=pointer]:
+            - /url: /help
+        - listitem [ref=e138]:
+          - link "Cancellation" [ref=e139] [cursor=pointer]:
+            - /url: /help#cancel
+        - listitem [ref=e140]:
+          - link "Refunds" [ref=e141] [cursor=pointer]:
+            - /url: /help#refund
+      - paragraph [ref=e142]: © 2026 Wulong LLC. All rights reserved.
+      - paragraph [ref=e143]: Payments processed securely by Stripe
+  - generic [ref=e146]:
+    - button "Menu" [ref=e147]:
+      - img [ref=e149]
+      - generic: Menu
+    - button "Inspect" [ref=e153]:
+      - img [ref=e155]
+      - generic: Inspect
+    - button "Audit" [ref=e157]:
+      - img [ref=e159]
+      - generic: Audit
+    - button "Settings" [ref=e162]:
+      - img [ref=e164]
+      - generic: Settings
